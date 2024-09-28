@@ -1,9 +1,10 @@
-const title = "Titulo del emprendimiento";
-const email = "Email del emprendimiento";
+const title = "Alberjería";
+const email = "florentinoverduras@gmail.com";
 const mensajeWhatsApp = encodeURIComponent(
-    `¡Hola! Estoy muy interesado en tus productos de ${title} y me gustaría recibir más información sobre ellos. Espero poder hablar pronto contigo para aclarar algunas dudas. ¡Gracias!`
+    "¡Hola! Estoy interesado en conocer más sobre los productos de " + title + " y me gustaría obtener más información. ¡Gracias!"
 );
-const numeroWhatsApp = "Numero del emprendimiento";
+const numeroWhatsApp = "+573213056787";
+
 const textos = {
     index: {
         title: title,
@@ -12,25 +13,25 @@ const textos = {
         title: title,
     },
     about: {
-        description1: "Descripción del emprendimiento parrafo uno",
-        description2: "Descripcion del emprendimiento parrafo dos"
+        description1: "En Alberjería, nos dedicamos a ofrecer una variedad de productos frescos como lichigo, tomate, frijol, arveja, entre otros. Nuestro compromiso es brindar la mejor calidad y frescura en cada producto que ofrecemos.",
+        description2: "Conocidos como 'El Viejito Alverjero', trabajamos con dedicación para que cada cliente reciba un servicio excepcional y productos de primera calidad. Ven y descubre nuestra oferta única de verduras."
     },
     contact: {
         whatsappLink: `https://wa.me/${numeroWhatsApp}?text=${mensajeWhatsApp}`,
-        email: email
+        email: email,
     },
     footer: {
-        slogan:{
-            p1: "slogan del emprendimiento parrafo uno",
-            p2: "slogan del emprendimiento parrafo dos"
+        slogan: {
+            p1: "El Viejito Alverjero.",
+            p2: ""
         },
-        address: "Dirección del emprendimiento",
+        address: "", // Información no proporcionada
         phone: numeroWhatsApp,
         email: email,
-        facebook: "https://www.facebook.com/",
-        instagram: "https://www.instagram.com/",
-        whatsappLink: `https://wa.me/${numeroWhatsApp}?text=${mensajeWhatsApp}`
+        facebook: "https://www.facebook.com/profile.php?id=61566424412042",
+        instagram: "www.instagram.com", // Instagram no proporcionado
+        whatsappLink: `https://wa.me/${numeroWhatsApp}?text=${mensajeWhatsApp}`,
     },
-
 };
+
 export default textos;
